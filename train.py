@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 from utils import *
 from tqdm import tqdm
-from model_w_att import Net
+from model_HSR import Net
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 # Settings
 def parse_args():
@@ -182,3 +182,4 @@ def setup_seed(seed):
 if __name__ == '__main__':
     cfg = parse_args()
     train(cfg)
+
