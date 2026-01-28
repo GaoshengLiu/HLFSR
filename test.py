@@ -4,7 +4,7 @@ import scipy.misc
 import torch.backends.cudnn as cudnn
 from torch.utils.data import DataLoader
 from utils import *
-from model_att import Net
+from model_HSR import Net
 from tqdm import tqdm
 from einops import rearrange
 import scipy.io as sio
@@ -136,3 +136,4 @@ def main(cfg):
 if __name__ == '__main__':
     cfg = parse_args()
     main(cfg)
+
